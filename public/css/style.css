@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+}
+
+.container{
+  max-width: 1160px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+/* ヘッダー*/
+header{
+  width: 100%;
+  position: absolute;
+  /* position: fixed;  */
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header > .container{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  background: #F4E511;
+}
+
+/* ロゴ*/
+.area_logo_header{
+  display: block;
+}
+.area_logo_header img{
+  height: 30px;
+  vertical-align: bottom;
+}
+.area_logo_header img:hover{
+  opacity: 0.7;
+}
+
+/* ヘッダーナビ*/
+.nav_header{
+  margin: 0 0 0 auto;
+}
+.list_nav_header{
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+  list-style: none;
+}
+.list_nav_header > li {
+  padding: 0 15px;
+}
+.list_nav_header a {
+  font-size: 15px;
+  color: #c9171e;
+  letter-spacing: .04em;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+.list_nav_header a::before {
+  background: #c9171e;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: center top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.list_nav_header a:hover::before {
+  transform-origin: center top;
+  transform: scale(1, 1);
+}
+
+/* トップビュー*/
+.area_top_view{
+  height: 700px;
+  background: url(../img/topview.jpg) no-repeat bottom center;
+  background-size: cover;
+  
+}
+.area_top_view > .container{
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.area_top_view .ttl{
+  font-size: 140px;
+  color: #c9171e;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: .04em;
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+.ttl_under{
+  font-size: 30px;
+  color: #000;
+  letter-spacing: .24em;
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+
+/* エリアホーム*/
+/* [class*="area_home"]{
+  padding: 30px 0;
+}
+.area_home_business{
+  background-color: azure;
+} */
+/* ヘッド*/
+.head_home{
+  display: flex;
+  justify-content: center;
+}
+.head_home .ttl{
+  font-size: 30px;
+  color: #000;
+  letter-spacing: .20em;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+.body_home{
+  display: flex;
+  justify-content: center;
+}
+
+/* フッター*/
+footer > .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: none;
+  padding: 0 0;
+} 
+.area_logo_footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-top: 50px;
+}
+.area_logo_footer > a{
+  padding: 0 20px;
+}
+.logo_ienter{
+  height: 30px;
+  vertical-align: bottom;
+}
+.logo_ienter:hover{
+  opacity: 0.7;
+}
+.logo_mynavi{
+  height: 23px;
+  vertical-align: bottom;
+}
+.logo_mynavi:hover{
+  opacity: 0.7;
+}
+.copyright{
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  line-height:30px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #c9171e;
+  margin: auto; 
+}
