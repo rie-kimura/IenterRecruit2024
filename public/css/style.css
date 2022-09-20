@@ -10,12 +10,12 @@ body{
   margin: 0 auto;
 }
 
-/* ヘッダー*/
+/* -----ヘッダー-----*/
 header{
   width: 100%;
   position: absolute;
-  /* position: fixed;  */
   position: sticky;
+  z-index: 1;
   top: 0;
   left: 0;
 }
@@ -28,7 +28,7 @@ header > .container{
   background: #F4E511;
 }
 
-/* ロゴ*/
+/* -----ロゴ-----*/
 .area_logo_header{
   display: block;
 }
@@ -40,7 +40,7 @@ header > .container{
   opacity: 0.7;
 }
 
-/* ヘッダーナビ*/
+/* -----ヘッダーナビ-----*/
 .nav_header{
   margin: 0 0 0 auto;
 }
@@ -79,7 +79,7 @@ header > .container{
   transform: scale(1, 1);
 }
 
-/* トップビュー*/
+/* -----トップビュー-----*/
 .area_top_view{
   height: 700px;
   background: url(../img/topview.jpg) no-repeat bottom center;
@@ -109,14 +109,14 @@ header > .container{
   margin: 0 0 0 0;
 }
 
-/* エリアホーム*/
+/* -----エリアホーム-----*/
 /* [class*="area_home"]{
-  padding: 30px 0;
-}
-.area_home_business{
-  background-color: azure;
+  
 } */
-/* ヘッド*/
+/* .area_home_business{
+  
+}  */
+/* -----ヘッド-----*/
 .head_home{
   display: flex;
   justify-content: center;
@@ -133,7 +133,44 @@ header > .container{
   justify-content: center;
 }
 
-/* フッター*/
+
+/* -----社員紹介-----*/
+.list_employee{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+/* .list_employee li{
+  
+} */
+.list_employee p{
+  text-align: center;
+}
+.name_employee{
+  font-size: 23px;
+}
+.list_employee_upper{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.list_employee img{
+  width: 300px;
+}
+
+.list_employee_under{
+  display: flex;
+  margin: 0 -50px;
+}
+.list_employee_under li{
+  flex: 1;
+  padding: 0 50px;
+}
+
+
+
+
+
+/* -----フッター-----*/
 footer > .container{
   display: flex;
   flex-direction: column;
