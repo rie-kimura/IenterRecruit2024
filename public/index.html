@@ -14,13 +14,15 @@
 </head>
 
 <body>
-
   <header>
     <div class="container" id="header">
       <div class="area_logo_header">
         <a href="">
           <img src="img/logo_row.png">
         </a>
+      </div>
+      <div class="area_title_header">
+        <p>採用情報ページ</p>
       </div>
       <nav class="nav_header">
         <ul class="list_nav_header" id="page-link">
@@ -35,14 +37,26 @@
 
   <main>
     <div class="area_top_view">
-      <div class="container">
-        <p class="ttl">Let's have fun.</p>
-        <p class="ttl_under">楽しむを世界へ</p>
-      </div>
-      <div class="scrolldown4">
+      <!-- <div class="scrolldown4">
         <span>Scroll</span>
-      </div>
+      </div> -->
     </div>
+
+    <!-- アイエンターについて-->
+    <section class="area_home_ienter">
+      <div class="container">
+        <div class="head_home">
+          <img src="img/logo_row.png"></img>
+        </div>
+        <div class="body_home">
+          <p>文章があればここに入れます</p>
+          <p>文章があればここに入れます</p>
+          <p>文章があればここに入れます</p>
+          <p>文章があればここに入れます</p>
+          <p>文章があればここに入れます</p>
+        </div>
+      </div>
+    </section>
 
     <!-- 業務内容-->
     <section class="area_home_business">
@@ -56,15 +70,15 @@
               <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                 checked="checked">
               <div class="carousel-item">
-                <img src="img/engineer.jpg">
+                <img src="img/business01.JPG">
               </div>
               <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
               <div class="carousel-item">
-                <img src="img/designer.jpg">
+                <img src="img/business02.JPG">
               </div>
               <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
               <div class="carousel-item">
-                <img src="img/salesman.jpg">
+                <img src="img/business03.JPG">
               </div>
               <label for="carousel-3" class="carousel-control prev control-1">‹</label>
               <label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -85,6 +99,24 @@
               </ol>
             </div>
           </div>
+        </div>
+        <div class="body_home">
+          <ul class="area_list_job">
+            <div class="list_job">
+              <li>
+                <img src="img/engineer.png">
+                <p class="job_name">システムエンジニア</p>
+              </li>
+              <li>
+                <img src="img/salesman.png">
+                <p class="job_name">企画営業</p>
+              </li>
+              <li>
+                <img src="img/desiner.png">
+                <p class="job_name">UIデザイナー</p>
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
     </section>
@@ -108,32 +140,48 @@
           <h2 class="ttl">社員紹介</h2>
         </div>
         <div class="body_home">
-          <ul class="list_employee">
-            <div class="list_employee_upper">
+          <ul class="area_list_employee">
+            <div class="list_employee">
               <li>
-                <img src="./img/profile_icon.png">
-                <p class="name_employee">代表取締役 入江社長</p>
-                <p class="description_employee">紹介文が入ります</p>
+                <img src="./img/employee01.png">
+                <p class="name_employee">七条 かのこ</p>
+                <p class="description_employee description_employee">3年目 システムエンジニア</p>
+              </li>
+              <li>
+                <img src="./img/employee02.png">
+                <p class="name_employee">山坂 流花</p>
+                <p class="description_employee description_employee">2年目 UIデザイナー</p>
+              </li>
+              <li>
+                <img src="./img/employee03.png">
+                <p class="name_employee">会田 芽衣</p>
+                <p class="description_employee description_employee">3年目 企画営業職</p>
               </li>
             </div>
-            <div class="list_employee_under">
-              <li>
-                <img src="./img/profile_icon.png">
-                <p class="name_employee">社員A</p>
-                <p class="description_employee">紹介文が入ります</p>
-              </li>
-              <li>
-                <img src="./img/profile_icon.png">
-                <p class="name_employee">社員B</p>
-                <p class="description_employee">紹介文が入ります</p>
-              </li>
-              <li>
-                <img src="./img/profile_icon.png">
-                <p class="name_employee">社員C</p>
-                <p class="description_employee">紹介文が入ります</p>
-              </li>
-            </div>
+            <div class="list_employee_new">
+              <h2>新入社員</h2>
+              <div class="list_employee">
+                <li>
+                  <img src="./img/employee04.png">
+                  <p class="name_employee">松本 千恵里</p>
+                  <p class="description_employee description_employee">UIデザイナー</p>
+                </li>
+                <li>
+                  <img src="./img/employee05.png">
+                  <p class="name_employee">高野 悠羽</p>
+                  <p class="description_employee description_employee">システムエンジニア</p>
+                </li>
+                <li>
+                  <img src="./img/employee06.png">
+                  <p class="name_employee">川嶋 彗矢</p>
+                  <p class="description_employee description_employee">企画営業職</p>
+                </li>
+              </div>
           </ul>
+          
+        </div>
+        <div class="btn_interview">
+          <a href="">新入社員インタビュー</a>
         </div>
       </div>
     </section>
@@ -145,7 +193,7 @@
           <h2 class="ttl">仕事環境</h2>
         </div>
         <div class="body_home">
-          コンテンツ
+          <p>リモートでの業務のため<br>全国各地どこでもOK!!</p>
         </div>
       </div>
     </section>

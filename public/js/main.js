@@ -1,4 +1,4 @@
-// ページ内リンク
+// -----ページ内リンク----- //
 $('#page-link a[href*="#"]').click(function () {//全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
 	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
 	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
@@ -7,7 +7,7 @@ $('#page-link a[href*="#"]').click(function () {//全てのページ内リンク
 });
 
 
-// ページトップリンク
+// -----ページトップリンク----- //
 //スクロールした際の動きを関数でまとめる
 function PageTopAnime() {
 	var scroll = $(window).scrollTop();
@@ -38,7 +38,7 @@ $('#page-top a').click(function () {
 });
 
 
-//ヘッダー上部固定
+// -----ヘッダー上部固定----- //
 //スクロールすると上部に固定させるための設定を関数でまとめる
 function FixedAnime() {
 	var headerH = $('#header').outerHeight(true);
@@ -57,3 +57,22 @@ $(window).scroll(function () {
 $(window).on('load', function () {
 	FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
 })
+
+
+// -----sliedToggle----- //
+$(function(){
+  $("#employee1").click(function () {
+    $('.description_employee_upper').slideToggle();
+  });
+ 
+  $("#employee2").click(function () {
+    $('.description_employee_under').slideToggle();
+  });
+ 
+  $("#employee3").click(function () {
+    $('.description_employee_under').slideToggle();
+  });
+	$("#employee4").click(function () {
+    $('.description_employee_under').slideToggle();
+  });
+});
