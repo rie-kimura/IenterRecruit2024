@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="css/pagetoplink.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="icon" href="img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,6 +25,9 @@
         <a href="">
           <img src="img/logo_row.png">
         </a>
+      </div>
+      <div class="area_title_header">
+        <p>採用情報ページ</p>
       </div>
       <nav class="nav_header">
         <ul class="list_nav_header" id="page-link">
@@ -33,21 +41,33 @@
   </header>
 
   <main>
-    <div class="area_top_view">
+    <div class="area_top_view"></div>
+
+    <!-- アイエンターについて-->
+    <section class="area_home_ienter">
       <div class="container">
-        <p class="ttl">Let's have fun.</p>
-        <p class="ttl_under">楽しむを世界へ</p>
+        <div class="head_home">
+          <img src="img/logo_row.png"></img>
+        </div>
+        <div class="body_home">
+          <p>私たちの原点，それは「<span>楽しむ</span>」ということ。</p>
+          <p>本気でやるから楽しい，<br>熱意を持って仕事をするから楽しい。<br>
+            壁にぶつかっても，<br>その状況をどう打開し，”仕事を楽しむ”か。<br>
+            それを常に考えながら働くのが<br>アイエンターのスタンスです。
+          </p>
+          <p>
+            最高の仲間と全力で仕事をし，<br>それを”楽しむ”ことができる方と，<br>お会いできることを願います。
+          </p>
+          <div class="aboutus"><span>about us</span></div>
+        </div>
       </div>
-      <div class="scrolldown4">
-        <span>Scroll</span>
-      </div>
-    </div>
+    </section>
 
     <!-- 業務内容-->
     <section class="area_home_business">
       <div class="container">
         <div class="head_home" id="business">
-          <h2 class="ttl">業務内容</h2>
+          <h2 class="ttl">WORKS</h2>
         </div>
         <div class="body_home">
           <div class="carousel">
@@ -55,15 +75,15 @@
               <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                 checked="checked">
               <div class="carousel-item">
-                <img src="img/engineer.jpg">
+                <img src="img/business01.jpg">
               </div>
               <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
               <div class="carousel-item">
-                <img src="img/designer.jpg">
+                <img src="img/business02.jpg">
               </div>
               <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
               <div class="carousel-item">
-                <img src="img/salesman.jpg">
+                <img src="img/business03.jpg">
               </div>
               <label for="carousel-3" class="carousel-control prev control-1">‹</label>
               <label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -85,6 +105,86 @@
             </div>
           </div>
         </div>
+        <ul class="area_list_job">
+          <div class="list_job">
+            <li>
+              <img src="img/engineer.png">
+              <p class="job_name">システムエンジニア</p>
+              <div class="job_explain">
+                <div>スマホアプリやタブレット向けの<br>アプリケーション開発</div>
+                <div>WEBアプリケーションや業務系<br>アプリケーション開発</div>
+                <div>IoT、AI、VR開発</div>
+                <div>最先端技術の研究開発</div>
+                <div>システム導入のための企画提案や<br>システムコンサル</div>
+                <div>自社サービスの企画・立案から開発</div>
+                <div>AWSを使った各種サービス用<br>インフラ構築・開発
+                  <br>（WEB，アプリ，IoT，AI，<br>ストリーミング配信)
+                </div>
+                <div>既存インフラからAWSへの<br>インフラ移行</div>
+                <div>AWS運用保守</div>
+              </div>
+            </li>
+            <li>
+              <img src="img/salesman.png">
+              <p class="job_name">企画営業</p>
+              <div class="job_explain">
+                <div>電話営業でアポイントを取得した<br>お客様への新規訪問(顧客開拓)</div>
+                <div>お客様の課題をヒアリングし，<br>課題解決のためのシステム提案</div>
+                <div>最新情報の収集とお客様への<br>定期的な情報提供＆リレーション営業</div>
+                <div>営業活動の効率化やコスト削減を図る<br>自社サービスの導入提案</div>
+                <div>企業の経営/人的課題を把握し，<br>技術支援などのサービス提案</div>
+              </div>
+            </li>
+            <li>
+              <img src="img/desiner.png">
+              <p class="job_name">UIデザイナー</p>
+              <div class="job_explain">
+                <div>WEBアプリや業務系アプリデザイン</div>
+                <div>スマホアプリやタブレット向けの<br>アプリデザイン</div>
+                <div>UXデザインコンサルティング</div>
+                </d>
+            </li>
+          </div>
+        </ul>
+        <div class="area_salary_info">
+          <h2 class="ttl_salary_info">給与・手当情報</h2>
+          <div class="salary_info">
+            <div class="salary_discription">
+              <div class="salary_info_ttl">初任給（支給額）</div>
+              <div class="salary_info_detail">
+                <div>大学院了：240,000円</div>
+                <div>大学・4年制専門・高専専攻科卒：230,000円</div>
+                <div>3年制専門卒：220,000円</div>
+                <div>短大・2年制専門・高専卒：210,000円</div>
+                <div class="salary_info_detail_sub">
+                  <div>固定残業制度あり</div>
+                  <div>※支給額は固定残業時間を含む</div>
+                </div>
+              </div>
+            </div>
+            <div class="salary_discription">
+              <div class="salary_discription_column">
+                <div class="salary_info_ttl">昇給・賞与</div>
+                <div class="salary_info_detail">
+                  <div>昇給：年1回（7月）</div>
+                  <div>昇格：年2回（1・7月）</div>
+                  <div>決算賞与（6月）</div>
+                </div>
+              </div>
+              <div class="salary_discription_column">
+                <div class="salary_info_ttl">諸手当</div>
+                <div class="salary_info_detail">
+                  <div>時間外手当（30時間超過分から全額支給）</div>
+                  <div>交通費（全額支給）</div>
+                  <div>通信補助費(在宅)</div>
+                  <div>こども手当</div>
+                  <div>資格取得報奨金</div>
+                  <div>役職手当</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -92,47 +192,109 @@
     <section class="area_home_benefits">
       <div class="container">
         <div class="head_home" id="benefits">
-          <h2 class="ttl">福利厚生</h2>
+          <h2 class="ttl">WELFARE</h2>
         </div>
         <div class="body_home">
-          コンテンツ
+          <div class="main_benefits">
+            <div class="ttl_main_benefits">
+              <h2>年間休日128日！</h2>
+            </div>
+            <div class="content_main_benefits">
+              <ul>
+                <li>完全週休 2日制（土・日・祝）</li>
+                <li>年始年末、会社の定める休日</li>
+                <li>記念日休暇<br>(有給とは別に好きな日に休暇が取れる制度)</li>
+                <li>年次有給休暇、育児・介護休暇</li>
+                <li>夏季休暇（7～9月の間で自由選択）</li>
+                <li>慶弔休暇、GW等（長期休暇を推奨）</li>
+              </ul>
+              <img src="img/sunny.png">
+            </div>
+          </div>
+          <div class="sub_benefits">
+            <div class="ttl_sub_benefits">
+              <h2>そのほかの福利厚生</h2>
+            </div>
+            <div class="content_sub_benefits">
+              <ul>
+                <li>社会保険完備（雇用、労災、健康、厚生年金）</li>
+                <li>社員旅行</li>
+                <li>はっぴーほーむPJ（時短勤務制度）※くるみんマーク認定企業</li>
+                <li>在宅勤務制度</li>
+                <li>通信補助費（在宅の場合）</li>
+                <li>副業制度</li>
+                <li>キャリア申告アンケート（勤務地や部署異動に関するアンケート）</li>
+                <li>オホーツクテレワーク</li>
+                <li>GrシャッフルランチPJ</li>
+                <li>各種資格取得支援金制度</li>
+                <li>互助会</li>
+                <li>慶弔見舞金制度</li>
+                <li>各種部活動（野球・バスケ・ゴルフ・フットサルなど）</li>
+                <li>直営健診センターでの健康診断</li>
+                <li>関東近県リゾート地（箱根・湯沢・館山）にある保養施設優待利用</li>
+                <li>全国各地にある宿泊施設の利用補助</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
 
     <!-- 社員紹介-->
-    <section class="area_home_Employee">
+    <section class="area_home_employee">
       <div class="container">
+        <div class="material01_left"></div>
+        <div class="material02_left"></div>
+        <div class="material01_right"></div>
+        <div class="material02_right"></div>
         <div class="head_home" id="employee">
-          <h2 class="ttl">社員紹介</h2>
+          <h2 class="ttl">EMPLOYEE</h2>
         </div>
         <div class="body_home">
-          <ul class="list_employee">
-            <div class="list_employee_upper">
+          <ul class="area_list_employee">
+            <div class="list_employee">
               <li>
-                <img src="./img/profile_icon.png" id="employee1">
-                <p class="name_employee">代表取締役 入江社長</p>
-                <p class="description_employee description_employee_upper" >紹介文が入ります</p>
+                <img src="img/employee01.png">
+                <p class="name_employee">七条 かのこ</p>
+                <p class="description_employee description_employee">3年目 システムエンジニア</p>
+              </li>
+              <li>
+                <img src="img/employee02.png">
+                <p class="name_employee">山坂 流花</p>
+                <p class="description_employee description_employee">2年目 UIデザイナー</p>
+              </li>
+              <li>
+                <img src="img/employee03.png">
+                <p class="name_employee">会田 芽衣</p>
+                <p class="description_employee description_employee">3年目 企画営業職</p>
               </li>
             </div>
-            <div class="list_employee_under">
-              <li>
-                <img src="./img/profile_icon.png" id="employee2">
-                <p class="name_employee">社員A</p>
-                <p class="description_employee description_employee_under" >紹介文が入ります</p>
-              </li>
-              <li>
-                <img src="./img/profile_icon.png" id="employee3">
-                <p class="name_employee">社員B</p>
-                <p class="description_employee description_employee_under">紹介文が入ります</p>
-              </li>
-              <li>
-                <img src="./img/profile_icon.png" class="employee_icon" id="employee4">
-                <p class="name_employee">社員C</p>
-                <p class="description_employee description_employee_under">紹介文が入ります</p>
-              </li>
-            </div>
+            <div class="list_employee_new">
+              <h2>新入社員</h2>
+              <div class="material03_left"></div>
+              <div class="material04_left"></div>
+              <div class="material03_right"></div>
+              <div class="material04_right"></div>
+              <div class="list_employee">
+                <li>
+                  <img src="img/employee04.png">
+                  <p class="name_employee">松本 千恵里</p>
+                  <p class="description_employee description_employee">UIデザイナー</p>
+                </li>
+                <li>
+                  <img src="img/employee05.png">
+                  <p class="name_employee">高野 悠羽</p>
+                  <p class="description_employee description_employee">システムエンジニア</p>
+                </li>
+                <li>
+                  <img src="img/employee06.png">
+                  <p class="name_employee">川嶋 彗矢</p>
+                  <p class="description_employee description_employee">企画営業職</p>
+                </li>
+              </div>
           </ul>
+        </div>
+        <div class="btn_transition">
+          <a href="interview.html">新入社員インタビュー</a>
         </div>
       </div>
     </section>
@@ -141,10 +303,37 @@
     <section class="area_home_environment">
       <div class="container">
         <div class="head_home" id="environment">
-          <h2 class="ttl">仕事環境</h2>
+          <h2 class="ttl">ENVIRONMENT</h2>
         </div>
         <div class="body_home">
-          コンテンツ
+          <p class="remortework">リモートでの業務のため<br>全国各地どこでもOK!!</p>
+          <div class="area_work_environment">
+            <h2><span>3つ</span>の働きやすさ</h2>
+            <div class="branch"></div>
+            <div class="work_environment">
+              
+              <ul>
+                <li class="corporate_culture">
+                  <h3 class="ttl_work_environment">社風</h3>
+                  <p class="content_work_environment">
+                    理念に共感して集まった社員がいかに仕事を楽しむかを考えながら業務に取り組んでいる。経営陣との距離が近く社内でのコミュニケーションも活発である。
+                  </p>
+                </li>
+                <li class="corporate_business">
+                  <h3 class="ttl_work_environment">事業</h3>
+                  <p class="content_work_environment">
+                    IoT，スマホアプリ，Web開発などの幅広い開発をしている。デザイナー採用も行いデザインにも力を入れている。若いうちからチャレンジできる。
+                  </p>
+                </li>
+                <li class="corporate_system">
+                  <h3 class="ttl_work_environment">制度</h3>
+                  <p class="content_work_environment">
+                    研修制度が充実で初心者でも安心して成長できる。在宅勤務制度や育児休暇制度，休暇がとりやすい制度が充実している。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -153,12 +342,12 @@
 
   <footer>
     <div class="container">
+      <div class="btn_transition btn_entry">
+        <a href="https://job.mynavi.jp/24/pc/search/corp72594/outline.html" target="_blank">エントリーはこちらから</a>
+      </div>
       <div class="area_logo_footer">
         <a href="https://www.i-enter.co.jp/" target="_blank">
           <img src="img/logo_row.png" class="logo_ienter">
-        </a>
-        <a href="https://job.mynavi.jp/24/pc/search/corp72594/outline.html" target="_blank">
-          <img src="img/mynavi2024.png" class="logo_mynavi">
         </a>
       </div>
       <p class="copyright">©i-enter ALL Right Reserved.</p>

@@ -57,22 +57,3 @@ $(window).scroll(function () {
 $(window).on('load', function () {
 	FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
 })
-
-
-// -----sliedToggle----- //
-$(function(){
-  $("#employee1").click(function () {
-    $('.description_employee_upper').slideToggle();
-  });
- 
-  $("#employee2").click(function () {
-    $('.description_employee_under').slideToggle();
-  });
- 
-  $("#employee3").click(function () {
-    $('.description_employee_under').slideToggle();
-  });
-	$("#employee4").click(function () {
-    $('.description_employee_under').slideToggle();
-  });
-});
