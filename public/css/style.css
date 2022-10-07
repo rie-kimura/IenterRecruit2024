@@ -1,25 +1,26 @@
 @charset "utf-8";
 
-body{
+body {
   margin: 0;
+  overflow-x: hidden;
 }
 
-ul{
+ul {
   padding: 0;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
-.container{
+.container {
   max-width: 1160px;
   padding: 0 40px;
   margin: 0 auto;
 }
 
 /* -----ヘッダー-----*/
-header{
+header {
   width: 100%;
   position: absolute;
   position: sticky;
@@ -28,7 +29,7 @@ header{
   left: 0;
 }
 
-header > .container{
+header>.container {
   height: 60px;
   display: flex;
   align-items: center;
@@ -37,19 +38,21 @@ header > .container{
 }
 
 /* -----ロゴ-----*/
-.area_logo_header{
+.area_logo_header {
   display: block;
 }
-.area_logo_header img{
+
+.area_logo_header img {
   height: 30px;
   vertical-align: bottom;
 }
-.area_logo_header img:hover{
+
+.area_logo_header img:hover {
   opacity: 0.7;
 }
 
 /* -----タイトル-----*/
-.area_title_header{
+.area_title_header {
   color: #d72020;
   font-size: 16px;
   letter-spacing: .2em;
@@ -59,29 +62,33 @@ header > .container{
 }
 
 /* -----ヘッダーナビ-----*/
-.nav_header{
+.nav_header {
   margin: 0 0 0 auto;
 }
-.list_nav_header{
+
+.list_nav_header {
   display: flex;
   align-items: center;
-  border-right: 1px solid #d72020;
+  /* border-right: 1px solid #d72020; */
   margin: 0 -15px;
   list-style: none;
 }
-.list_nav_header > li {
+
+.list_nav_header>li {
   padding: 0 15px;
-  border-left: 1px solid #d72020;
+  /* border-left: 1px solid #d72020; */
 
 }
+
 .list_nav_header a {
-  font-size: 15px;
+  font-size: 16px;
   color: #d72020;
-  letter-spacing: .1em;
+  letter-spacing: .12em;
   font-weight: bold;
   text-decoration: none;
   position: relative;
 }
+
 .list_nav_header a::before {
   background: #d72020;
   content: '';
@@ -95,147 +102,359 @@ header > .container{
   transform: scale(0, 1);
   transition: transform .3s;
 }
+
 .list_nav_header a:hover::before {
   transform-origin: center top;
   transform: scale(1, 1);
 }
 
+/* -----index.html-----*/
 /* -----トップビュー-----*/
-.area_top_view{
-  height: 700px;
-  background: url(../img/topview.png) no-repeat bottom center;
-  background-size: cover;
-  
+.area_top_view img{
+  margin-top: -90px;
+  width: 100%;
+  height: auto;
 }
-.area_top_view > .container{
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* .area_top_view .ttl{
-  font-size: 140px;
-  color: #c51119;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  letter-spacing: .04em;
-  font-weight: bold;
-  margin: 0 0 0 0;
-}
-.ttl_under{
-  font-size: 30px;
-  color: #000;
-  letter-spacing: .24em;
-  font-weight: bold;
-  margin: 0 0 0 0;
-} */
 
 /* -----エリアホーム-----*/
 /* -----ヘッド-----*/
-.head_home{
+section[class*="area_home_"]{
+  margin-bottom: 80px;
+}
+.head_home {
   display: flex;
   justify-content: center;
 }
-.head_home .ttl{
+
+.head_home .ttl {
+  position: relative;
   font-size: 30px;
-  color: #000;
-  letter-spacing: .20em;
-  padding-top: 50px;
-  margin-bottom: 20px;
+  color: #e62d2d;
+  letter-spacing: .80em;
+  padding-top: 70px;
+  margin-bottom: 70px;
 }
-.body_home{
+
+.head_home .ttl::before {
+  position: absolute;
+  top: 38px;
+  left: 36%;
+  color: #fff;
+  letter-spacing: .80em;
+  font-size: 76px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.1px #e62d2d;
+  opacity: 0.2;
+  z-index: -1;
+  width: 600px;
+}
+
+.area_home_business .ttl::before {
+  content: '業務内容';
+  transform: translateX(-37%);
+}
+
+.area_home_benefits .ttl::before {
+  content: '福利厚生';
+  transform: translateX(-35%);
+}
+
+.area_home_employee .ttl::before {
+  content: '社員紹介';
+  transform: translateX(-34%);
+}
+
+.area_home_environment .ttl::before {
+  content: '仕事環境';
+  transform: translateX(-31%);
+}
+
+.body_home {
   display: flex;
   justify-content: center;
 }
 
 /* -----アイエンターについて-----*/
-.area_home_ienter img{
-  margin-top: 100px;
+.area_home_ienter img {
+  margin-top: 200px;
   height: 70px;
 }
-.body_home > p{
+
+.area_home_ienter .body_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 50px;
+  margin-bottom: 380px;
+}
+
+.area_home_ienter p {
+  text-align: center;
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: .10em;
+}
+
+.area_home_ienter span {
+  color: #d72020;
 }
 
 /* -----業務内容-----*/
-.area_home_business img{
+.area_home_business img {
   border-radius: 100px;
-} 
-.list_job{
+}
+
+.list_job {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  text-align: center;
+  margin-top: 50px;
 }
-.list_job li{
+
+.list_job li {
   flex: 1;
   padding: 0 50px;
 }
-.job_name{
+
+.list_job img {
+  width: 300px;
+}
+
+.job_name {
   text-align: center;
   color: #e62d2d;
   font-size: 18px;
   letter-spacing: .20em;
+}
 
+.job_explain {
+  display: inline-block;
+  text-align: left;
+  
 }
-.list_job img{
-  width: 300px;
+.job_explain div{
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: .10em;
 }
+
+/* -----給与・手当情報-----*/
+.ttl_salary_info {
+  text-align: center;
+  color: #d72020;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 36px;
+  letter-spacing: .50em;
+}
+
+.salary_info {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.salary_info::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 360px;
+  background-color: #d72020;
+  position: absolute;
+  top: 30px;
+  left: -5px;
+}
+
+.salary_info::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 360px;
+  background-color: #d72020;
+  position: absolute;
+  top: 30px;
+  right: -5px;
+}
+
+.salary_discription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 350px;
+  margin: 30px;
+  border: solid 2px #d72020;
+  border-radius: 30px;
+}
+
+.salary_discription_column {
+  margin: 10px;
+}
+
+.salary_info_ttl {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: .16em;
+}
+
+.salary_info_detail {
+  /* text-align: center; */
+  font-size: 15px;
+  letter-spacing: .16em;
+  margin-top: 18px;
+}
+
+.salary_info_detail_sub {
+  margin-top: 20px;
+}
+
+/* -----福利厚生-----*/
+.area_home_benefits {
+  display: flex;
+}
+
+.area_home_benefits .body_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 3px #eded31;
+  width: 980px;
+}
+
+.area_home_benefits li::before {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 0.5em;
+  content: "";
+  background: #d72020;
+}
+
+.main_benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 3px #eded31;
+  border-radius: 50px;
+  width: 850px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.sub_benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 3px #eded31;
+  border-radius: 50px;
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.ttl_main_benefits h2{
+  color: #d72020;
+  font-size: 40px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  letter-spacing: .60em;
+}
+
+.content_main_benefits {
+  display: flex;
+  letter-spacing: .40em;
+  margin-left: 50px;
+}
+
+.content_main_benefits li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.content_main_benefits img {
+  width: 300px
+}
+
+.ttl_sub_benefits {
+  color: #d72020;
+  font-size: 20px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  letter-spacing: .40em;
+}
+
+.content_sub_benefits {
+  font-size: 14px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  letter-spacing: .40em;
+}
+
+.content_sub_benefits li {
+  position: relative;
+  margin-bottom: 5px;
+}
+
 
 /* -----社員紹介-----*/
-
-/* .description_employee{
-  display:none
-} */
-.list_employee{
+.list_employee {
   display: flex;
-  text-align: center; 
-  margin-bottom: 40px; 
+  text-align: center;
+  margin-bottom: 40px;
 }
-.list_employee li{
+
+.list_employee li {
   flex: 1;
   padding: 0 50px;
 }
-.list_employee img{
+
+.list_employee img {
   width: 300px;
 }
-/* .list_employee img:hover{
-  cursor: pointer;
-  transform: scale(1.1,1.1);
-} */
 
-.list_employee_new h2{
+.list_employee_new h2 {
   text-align: center;
   color: #d72020;
-  font-size: 36px;
-  letter-spacing: .30em;
+  font-size: 40px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  letter-spacing: .50em;
+  margin-top: 140px;
 }
+
 .name_employee {
   color: #e62d2d;
   font-size: 23px;
   margin: 0 !important;
   letter-spacing: .20em;
 }
-.name_employee:after { /* 疑似要素で文字を付与 */
+
+.name_employee:after {
+  /* 疑似要素で文字を付与 */
   color: #e62d2d;
-  content: "さん";
+  /* content: "さん"; */
   font-size: 16px;
   letter-spacing: .20em;
-  }
-.description_employee{
+}
+
+.description_employee {
   color: #e62d2d;
   margin-top: 10px !important;
   letter-spacing: .20em;
 }
-.btn_interview{
+
+.btn_transition {
   text-align: center;
+  margin: 40px 0;
 }
-.btn_interview a {
+
+.btn_transition a {
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  max-width: 240px;
+  width: 240px;
   height: 40px;
   padding: 10px 25px;
   color: #fff;
@@ -248,13 +467,15 @@ header > .container{
   box-shadow: 0.2rem 0.3rem 1px 0.1rem #545353;
   text-decoration: none;
 }
-.btn_interview a:hover {
-transform: translate3d(0.2rem, 0.2rem, 0);
-box-shadow: none;
-opacity: 0.7;
-transition: all 0.2s;
+
+.btn_transition a:hover {
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 0.7;
+  transition: all 0.2s;
 }
-.btn_interview a:after {
+
+.btn_transition a:after {
   content: '';
   width: 10px;
   height: 10px;
@@ -267,55 +488,257 @@ transition: all 0.2s;
   border-radius: 1px;
   transition: 0.3s ease-in-out;
 }
+.material01_left{
+  position: absolute;
+    background: url(../img/material01.png) no-repeat right;
+    width: 647px;
+    height: 584px;
+    left: -5px;
+    z-index: -1;
+}
+.material02_left{
+  position: absolute;
+  background: url(../img/material03.png) no-repeat bottom right;
+  width: 205px;
+  height: 738px;
+  left: -30px;
+  z-index: -1;
+}
+.material03_left{
+  position: absolute;
+    background: url(../img/material01.png) no-repeat right;
+    width: 538px;
+    height: 864px;
+    left: -5px;
+    z-index: -1;
+}
+.material04_left{
+  position: absolute;
+  background: url(../img/material03.png) no-repeat bottom right;
+  width: 304px;
+  height: 400px;
+  left: 18px;
+  z-index: -1;
+}
+.material01_right{
+  position: absolute;
+    position: absolute;
+    background: url(../img/material01.png) no-repeat left;
+    width: 38em;
+    height: 1350px;
+    left: 57em;
+    z-index: -1;
+}
+.material02_right{
+  position: absolute;
+  background: url(../img/material02.png) no-repeat bottom left;
+  width: 87em;
+  height: 848px;
+  left: 77em;
+  z-index: -1;
+}
+.material03_right{
+  position: absolute;
+    background: url(../img/material01.png) no-repeat left;
+    position: absolute;
+    background: url(../img/material01.png) no-repeat left;
+    width: 38em;
+    height: 601px;
+    left: 57em;
+    z-index: -1;
+}
+.material04_right{
+  position: absolute;
+  background: url(../img/material02.png) no-repeat bottom left;
+  width: 15em;
+  height: 674px;
+  left: 80em;
+  z-index: -1;
+}
 
-
-/* -----福利厚生-----*/
-.area_home_environment p{
+/* -----仕事環境-----*/
+.area_home_environment .body_home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.branch{
+  /* position: absolute; */
+  background: url(../img/branch.png) no-repeat  center;
+  width: 1043px;
+  height: 120px;
+}
+.work_environment {
+margin-top: -60px;
+}
+.work_environment ul{
+  display: flex;
+}
+.work_environment li{
+  /* margin: 20px; */
+  padding: 12px;
+}
+.body_home h2{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  letter-spacing: .50em;
+  margin-top: 80px;
+  
+}
+.area_work_environment h2{
+  margin-bottom: 0px;
+}
+.area_work_environment h2::before{
+  content: url(../img/material04.PNG);
+  vertical-align: middle;
+  display: inline-block;
+  transform: scale(0.7);
+  /* padding-right: 5px; */
+}
+.area_work_environment h2::after{
+  content: url(../img/material04.PNG);
+  vertical-align: middle;
+  display: inline-block;
+  transform: scale(0.7);
+  /* margin-left: -30px; */
+}
+.area_home_environment span {
+  color: #d72020;
+}
+.remortework {
   margin-top: 10px !important;
   color: #d72020;
   font-size: 50px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   letter-spacing: .60em;
 }
-
+.ttl_work_environment{
+  text-align: center;
+  font-size: 40px;
+  color: #d72020;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  /* font-weight: bold; */
+  letter-spacing: .50em;
+}
+.content_work_environment{
+  font-size: 18px;
+  letter-spacing: .20em;
+  width: 330px;
+}
 /* -----フッター-----*/
-footer > .container{
+footer>.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: none;
   padding: 0 0;
-} 
-.area_logo_footer{
+}
+
+.area_logo_footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 15px;
   padding-top: 50px;
 }
-.area_logo_footer > a{
-  padding: 0 20px;
+
+.btn_footer a{
+  width: 320px;
+  height: 60px;
+  font-size: 17px;
+  margin-bottom: 70px;
+  letter-spacing: .20em;
 }
-.logo_ienter{
-  height: 30px;
+
+.area_logo_footer a {
+  margin:30px 20px;
+}
+
+.logo_ienter {
+  height: 36px;
   vertical-align: bottom;
 }
-.logo_ienter:hover{
+
+.logo_ienter:hover {
   opacity: 0.7;
 }
-.logo_mynavi{
-  height: 23px;
-  vertical-align: bottom;
-}
-.logo_mynavi:hover{
-  opacity: 0.7;
-}
-.copyright{
+
+.copyright {
   text-align: center;
   width: 100%;
   height: 30px;
-  line-height:30px;
+  line-height: 30px;
   color: #fff;
   font-size: 12px;
   background-color: #d72020;
-  margin: auto; 
+  margin: auto;
+}
+
+
+/* -----interview.html-----*/
+/* -----トップビュー-----*/
+.area_top_interview img{
+  margin-top: -70px;
+  width: 100%;
+  height: auto;
+}
+
+/* -----新入社員インタビュー-----*/
+.area_home_interview>.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.area_interview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.body_content{
+  width: 800px;
+}
+
+.employee_info {
+  display: flex;
+  align-items: center;
+}
+
+.area_home_interview img {
+  width: 300px;
+  margin-right: 60px;
+}
+
+.employee_name {
+  color: #e62d2d;
+  font-size: 26px;
+  letter-spacing: .20em;
+}
+
+.employee_job {
+  color: #e62d2d;
+  font-size: 16px;
+  margin-left: 24px;
+  letter-spacing: .20em;
+}
+
+.interview_question {
+  color: #e62d2d;
+  font-size: 16px;
+  margin-left: 24px;
+  letter-spacing: .20em;
+}
+
+.interview_answer {
+  font-size: 18px;
+  margin-left: 24px;
+  margin-bottom: 40px;
+  letter-spacing: .20em;
+}
+
+.btn_top {
+  margin-bottom: 50px;
 }
